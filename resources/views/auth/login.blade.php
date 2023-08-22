@@ -31,17 +31,17 @@
 
         <div class="col-md-6 right-box">
             <div class="row align-items-center">
-                <div class="header-text mb-4">
-                    <h2>Login</h2>
+                <div class="header-text mb-4" >
+                    <h2>Ingresar</h2>
                     <p>Estamos felices de que regreses!</p>
                 </div>
                 <form action="{{route('login')}}" method="post">
                     @csrf
-                <h3>Email</h3>
+                <h3>Correo</h3>
                 <div class="input-group mb-3">
                     <input type="email" name="email" class="form-control form-control-lg bg-light fs-6" placeholder="Ingresa tu Email">
                 </div>
-                <h3>Password</h3>
+                <h3>Contraseña</h3>
                 <div class="input-group mb-1">
                     <input type="password" name="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
                 </div>
@@ -61,9 +61,9 @@
                     <button class="btn btn-lg btn-light w-100 fs-6"><img src="images/google.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
                 </div> --}}
                 </form>
-                <div class="row">
+                {{-- <div class="row">
                     <small>Don't have account? <a href="#">Sign Up</a></small>
-                </div>
+                </div> --}}
             </div>
         </div>
         </div>
